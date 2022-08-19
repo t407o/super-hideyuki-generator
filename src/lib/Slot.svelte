@@ -19,7 +19,6 @@
   const HIDES = [
     "英",
     "秀",
-    "英",
     "日出",
     "偉",
     "映",
@@ -27,6 +26,7 @@
     "任",
     "継",
     "HIDE",
+    "ヒデ",
   ];
   const YUKIS = [
     "行",
@@ -52,13 +52,13 @@
     "進",
     "享",
     "YUKI",
+    "ユキ",
   ];
 </script>
 
 {#if hideyuki}
-  <p>
-    今日から君は <b>"{hideyuki}" (ひでゆき)</b> だ！！
-  </p>
+  <p><b>"{hideyuki}"</b>(ひでゆき)</p>
+  <p>はいかがでしょうか！！</p>
 {/if}
 <button on:click={genHideyuki}> 漢字を得る </button>
 
@@ -73,6 +73,12 @@
     Search the meaning of&nbsp;<a
       href="https://www.google.com/search?q={yuki}"
       target="_blank">{yuki}</a
+    >
+  </p>
+  <p>
+    Search existing &nbsp;<a
+      href="https://www.google.com/search?q={hideyuki}"
+      target="_blank">{hideyuki}</a
     >
   </p>
 {/if}

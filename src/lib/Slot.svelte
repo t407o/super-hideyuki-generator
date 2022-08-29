@@ -1,6 +1,6 @@
 <script lang="ts">
-  let hide: string = "ひで";
-  let yuki: string = "ゆき";
+  let hide: string = undefined;
+  let yuki: string = undefined;
   let hideyuki: string = undefined;
   const genHideyuki = () => {
     hide = genKanji(HIDES);
